@@ -11,6 +11,26 @@ html,
     padding: 0;
 }
 
+@keyframes bounce {
+
+    0%,
+    20%,
+    60%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
 
 .website-name {
     text-align: center;
@@ -30,6 +50,15 @@ html,
     width: 100%;
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+    background-color: rgb(150, 153, 157);
+}
 
 .card {
     height: 50vh;
@@ -58,12 +87,10 @@ html,
     padding: 20px;
 }
 
-
 .card-title {
     font-size: 2.2rem;
     margin-top: 15px;
 }
-
 
 .card-price {
     font-size: 1.8rem;
@@ -71,17 +98,80 @@ html,
     text-align: center;
 }
 
-.container {
+.card-people {
+    height: 50vh;
+    width: 24%;
+    margin: 2.5rem 0;
     display: flex;
-    flex-wrap: wrap;
-    width: 100vw;
-    justify-content: space-around;
-    margin: auto;
+    background-color: rgb(220, 219, 153);
+    flex-direction: column;
     align-items: center;
-    background-color: rgb(150, 153, 157);
+    justify-content: space-between;
+    transition: 0.3s ease-in-out;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 1);
+}
+
+.card-hover1 {
+    height: 50vh;
+    width: 24%;
+    margin: 2.5rem 0;
+    display: flex;
+    background-color: rgb(220, 219, 153);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s ease-in-out;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 1);
+}
+
+.card-hover2 {
+    height: 50vh;
+    width: 24%;
+    margin: 2.5rem 0;
+    display: flex;
+    background-color: rgb(220, 219, 153);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s ease-in-out;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 1);
+}
+
+.card-hover3 {
+    height: 50vh;
+    width: 24%;
+    margin: 2.5rem 0;
+    display: flex;
+    background-color: rgb(220, 219, 153);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s ease-in-out;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 1);
 }
 
 .card:hover {
     transform: scale(1.1, 1.1);
     background-color: rgb(130, 154, 185);
+}
+
+.card-people:hover {
+    color: rgb(66, 93, 75) !important;
+    border-radius: 50px;
+    border-color: rgb(66, 93, 75) !important;
+    transition: 0.3s;
+}
+
+.card-hover1:hover {
+    color: #6bafaa;
+    box-shadow: 0px 0px 5px #6bafaa;
+    text-shadow: 0px 0px 5px #6bafaa;
+}
+
+.card-hover2:hover {
+    opacity: 0.5;
+}
+
+.card-hover3:hover {
+    animation: bounce 1s;
 }
