@@ -12,16 +12,6 @@
         }
 
 
-        @media screen and (max-width: 1200px) {
-            .card {
-                width: 100%;
-                height: 100%;
-            }
-
-            .card-text {
-                font-size: 9px;
-            }
-        }
 
         @keyframes bounce {
 
@@ -29,17 +19,14 @@
             20%,
             60%,
             100% {
-                -webkit-transform: translateY(0);
                 transform: translateY(0);
             }
 
             40% {
-                -webkit-transform: translateY(-20px);
                 transform: translateY(-20px);
             }
 
             80% {
-                -webkit-transform: translateY(-10px);
                 transform: translateY(-10px);
             }
         }
@@ -73,6 +60,7 @@
             box-shadow: 10px 5px 10px rgba(0, 0, 0, 1);
             width: 100%;
         }
+
 
         .container {
             display: flex;
@@ -121,9 +109,6 @@
             text-align: center;
         }
 
-
-
-
         #hover4:hover {
             transform: scale(1.1, 1.1);
             background-color: rgb(130, 154, 185);
@@ -148,4 +133,27 @@
 
         #hover3:hover {
             animation: bounce 1s;
+        }
+
+        .card-price {
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .card {
+                width: 100%;
+            }
+
+            .card-price {
+                height: auto;
+                text-align: center;
+                align-items: center;
+            }
+
+            .card-img {
+                padding: 0px;
+                margin: 0px;
+            }
         }
